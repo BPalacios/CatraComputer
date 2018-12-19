@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>CatraComputer</title>
+        <link href="css/index.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <span>Simulador CatraComputer</span>
+            <span></span>
+            <nav>
+                <button id="debug" onclick="debugCode()">
+                    <img src="">
+                    Depurar
+                </button>
+                <button id="compiler" onclick="compilerCode()">
+                    <img src="">
+                    Compilar
+                </button>
+            </nav>
+        </header>
+        <div id="code">
+            <textarea id="code-behind"></textarea>
+            <textarea id="code-exit"></textarea>
+        </div>
+        <div id="console">
+            <div id="console-title">
+                <span>Console</span>
+                <span></span>
+                <div id="console-bar-buttons">
+                    <button onclick="minConsole()" id="minC">_</button>
+                    <button onclick="maxConsole()" id="maxC">--</button>
+                </div>
+            </div>
+            <div id="console-log-container">
+                <textarea id="console-log" readonly>CatraComputer ... </textarea>
+            </div>
+        </div>
+    </body>
+    <script src="js/actions.js" type="text/javascript"></script>
+    <script src="js/memoria.js" type="text/javascript"></script>
+    <script src="js/interprete.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,119 @@
+body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+header {
+    width: 100%;
+    height: 5%;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: 15% auto 20%;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 1%;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 5%;
+    justify-items: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav > button {
+    width: 80%;
+    height: 80%;
+    font-size: large;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#debug {
+    border: solid 1px white;
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+#compiler {
+    border: solid 1px white;
+    background-color: rgba(1, 71, 1, 0.7);
+}
+
+#code {
+    width: 100%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+
+}
+
+#code-behind {
+    width: 98%;
+    min-width: 98%;
+    max-width: 98%;
+    height: 95%;
+    min-height: 95%;
+    max-height: 95%;
+    background-color: rgba(19, 18, 18, 0.7);
+    color: white;
+}
+
+#code-exit {
+    width: 98%;
+    min-width: 98%;
+    max-width: 98%;
+    height: 95%;
+    min-height: 95%;
+    max-height: 95%;
+    background-color: rgba(19, 18, 18, 0.7);
+    color: aquamarine;
+}
+
+#console {
+    width: 100%;
+    height: 30%;
+    display: grid;
+    grid-template-rows: 10% auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#console-title {
+    background-color: gray;
+    color: white;
+    font-size: large;
+    border-radius: 5px 5px 0px 0px;
+    display: grid;
+    grid-template-columns: 5% 92% 3%;
+    justify-items: center;
+    align-items: center;
+}
+
+#console-log {
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    border: 0px;
+    height: 90%;
+    min-height: 90%;
+    max-height: 90%;
+    margin: 0%;
+    background-color: black;
+}
